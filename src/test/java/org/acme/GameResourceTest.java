@@ -12,7 +12,7 @@ public class GameResourceTest {
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/hello")
+          .when().get("/games/hello")
           .then()
              .statusCode(200)
              .body(is("Game-Storage"));
